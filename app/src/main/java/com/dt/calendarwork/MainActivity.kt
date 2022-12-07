@@ -20,6 +20,7 @@ import com.dt.composedatepicker.ComposeCalendar
 import com.dt.composedatepicker.MonthViewType
 import com.dt.composedatepicker.SelectDateListener
 import java.util.*
+import java.util.Locale.KOREA
 
 
 class MainActivity : ComponentActivity() {
@@ -69,10 +70,10 @@ fun MainScreen() {
                     minDate = calendar.time,
                     maxDate = calendarMax.time,
                     initialDate = initialCalendar.time,
-                    locale = Locale("en"),
+                    locale = Locale.ENGLISH,
                     title = "Select Date",
                     buttonTextSize = 15.sp,
-                    calendarType = CalendarType.ONE_SCREEN_MONTH_AND_YEAR,
+                    calendarType = CalendarType.MONTH_AND_YEAR,
                     monthViewType = MonthViewType.ONLY_NUMBER_ONE_COLUMN,
                     listener = object : SelectDateListener {
                         override fun onDateSelected(date: Date) {

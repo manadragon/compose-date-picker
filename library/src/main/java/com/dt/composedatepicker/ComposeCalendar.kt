@@ -29,7 +29,6 @@ fun ComposeCalendar(
     buttonTextSize: TextUnit = TextUnit.Unspecified,
     monthViewType: MonthViewType? = MonthViewType.ONLY_MONTH
 ) {
-    // test
     var minYear = 1970
     var minMonth = 0
     var maxYear = 2100
